@@ -36,7 +36,7 @@ function App() {
     return (<Age is21={is21} setAge={setAge} />)
   } else {
     return (
-      <div classNmae="App">
+      <div className="app">
         <Router>
           <div >
             <header>

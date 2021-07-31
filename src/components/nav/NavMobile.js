@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Menu = (props) => {
 
@@ -12,8 +12,8 @@ const Menu = (props) => {
             </div>
             <div className="mobile-menu-body">
                 <ul className="mobile-nav">
-                    <li className="link"><Link onClick={() => props.toggleMenu(!props.isOpen)}  to="/about" >ABOUT</Link></li>
-                    <li className="link"><Link to="/goodies" >THE GOODS</Link></li>
+                    <li className="link"><NavLink onClick={() => props.toggleMenu(!props.isOpen)}  to="/about" >ABOUT</NavLink></li>
+                    <li className="link"><NavLink onClick={() => props.toggleMenu(!props.isOpen)}  to="/goodies" >THE GOODS</NavLink></li>
                     <li className="link"><a href="">ORDER</a></li>
                     <li onClick={() => console.log("SHOW LOCATIONS!")} className="link">PICK UP</li>
                 </ul>
@@ -35,7 +35,7 @@ function NavMobile() {
     return (
         <>
             <nav id="MOBILE_NAV" className="mobile-nav">
-                <div className="logo"><h1>LOGO</h1></div>
+                <div className="logo"><NavLink to="/" >LOGO</NavLink></div>
                 <div className="hamburger" onClick={() => toggleMenu(!isOpen)}><h1>HAM</h1></div> 
             </nav>
 

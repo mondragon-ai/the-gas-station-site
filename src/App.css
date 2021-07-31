@@ -1,4 +1,4 @@
-.App {
+.app {
   position: relative;
   text-align: center;
   width: 100%;
@@ -395,10 +395,163 @@ li {
   align-items: center;
 }
 
-#GOODIES_PAGE section {
+#GOODIES_PAGE .menu {
   position: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#GOODIES_PAGE .selected {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* -webkit-flex-wrap: wrap; */
+  overflow: hidden;
+}
+
+.menu-container .menu-card {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  flex: 1;
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
+}
+
+#FLOWERS {
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* -webkit-flex-wrap: wrap; */
+  overflow: scroll;
+}
+
+#FLOWERS .strains {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  flex: 1;
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
+}
+
+#CONCENTRATES {
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* -webkit-flex-wrap: wrap; */
+  overflow: scroll;
+}
+
+#CONCENTRATES .concentrate {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  flex: 1;
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
+}
+
+#EDIBLES {
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* -webkit-flex-wrap: wrap; */
+  overflow: scroll;
+}
+
+#EDIBLES .edible-item {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  flex: 1;
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
+}
+
+#GEAR {
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* -webkit-flex-wrap: wrap; */
+  overflow: scroll;
+}
+
+#GEAR .gear-item {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  flex: 1;
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
 }
