@@ -131,9 +131,21 @@ li {
 /* =======================================
 /* 2. NAV
 /* ======================================= */
+#MAIN_HEADER {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#MAIN_HEADER div {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .top-nav {
   position: absolute;
-  top: 4%;
+  top: 2%;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -155,12 +167,22 @@ li {
   align-items: center;
 }
 
+.nav-tabs div {
+  height: 5vh;
+  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
+}
+
 .nav-social {
   position: relative;
   margin: 0;
   margin-right: 2%;
   padding: 0;
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   flex-grow: 1;
@@ -169,7 +191,8 @@ li {
 }
 
 .nav-social div {
-  margin: 0 2%;
+  margin: 0 2% !important;
+  width: auto !important;
 }
 
 .main-nav {
@@ -283,7 +306,7 @@ li {
 .slide-card {
   position: relative;
   width: 80%;
-  height: 80%;
+  height: 100%;
   margin: auto;
   padding: 0;
   display: flex;
@@ -474,13 +497,35 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   /* -webkit-flex-wrap: wrap; */
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: 1px -1px 19px 5px rgb(204 199 199);
+  border-radius: 10px;
 }
 
-#FLOWERS .strains {
+#FLOWERS > div {
   position: relative;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-color: transparent;
+  color: white;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+/* STRAIN COMPONENT*/
+
+#FLOWERS .strains {
+  background-color: transparent;
+  position: relative;
+  width: 100% !important;
+  height: 60% !important;
   flex: 1;
   display: flex;
   flex-basis: 40%;
@@ -489,9 +534,104 @@ li {
   align-items: center;
   flex-wrap: nowrap;
   align-content: space-around;
-  background-color: red;
+  background-color: transparent;
   color: white;
   box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid aliceblue;
+}
+
+#FLOWERS .strains:hover h1 {
+  color: rgb(17, 17, 17);
+}
+
+#FLOWERS .strains:hover h3 {
+  color: rgb(17, 17, 17);
+}
+
+#FLOWERS .strains:hover span {
+  color: rgb(17, 17, 17);
+}
+
+#FLOWERS .strains:hover p {
+  color: rgb(17, 17, 17);
+}
+
+.strain-top {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.strain-title {
+  background-color: transparent;
+  height: 100%;
+  padding: 1% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thc-item {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.thc-container {
+  background-color: transparent;
+  height: 100%;
+  padding: 1% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img-container {
+  background-color: transparent;
+  width: 100%;
+}
+
+#FLOWERS img {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: auto;
+}
+
+.strains-footer {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.strains-footer div {
+  background-color: transparent;
+  width: 100%;
+  margin: 5%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.strains-footer div h3 {
+  margin: 1% 0;
 }
 
 #CONCENTRATES {

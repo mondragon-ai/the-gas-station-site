@@ -39,7 +39,7 @@ function App() {
       <div className="app">
         <Router>
           <div >
-            <header>
+            <header id="MAIN_HEADER">
               <NavTop/>
               {w <= 768 ? <NavMobile /> : <NavBar/>}
             </header>
