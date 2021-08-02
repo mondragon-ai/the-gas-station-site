@@ -6,7 +6,9 @@ function FirstComponent() {
             <div className="designs first-slide-design-one">f</div>
             <div className="designs first-slide-design-two">p</div>
             <div className="designs first-slide-design-three">e</div>
-            <div className="slide-card" style={{ background: "blue", width: "80%" }}></div>
+            <div className="slides-bg" style={{ width: "80%" }}>
+                <div className="slide-card" style={{ width: "100%" }}></div>
+            </div>
         </div>
     )
 }

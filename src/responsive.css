@@ -10,7 +10,6 @@
   }
   .mobile-nav {
     z-index: 10000000000000;
-    background-color: none !important;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -26,30 +25,44 @@
   }
 
   #MOBILE_NAV .logo {
+    background-color: #215732 !important;
     position: relative;
     /* margin: 5% 0; */
     padding: 0px 0 17px 0;
     width: 40vw;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
 
+  #MOBILE_NAV .logo a {
+    background-color: #215732 !important;
+    text-decoration: none;
+    color: lavender;
+  }
+
   #MOBILE_NAV .hamburger {
+    background-color: #215732 !important;
     position: relative;
     /* margin: 5% 0; */
     padding: 17px 0 0 0;
     width: 40vw;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
 
+  #MOBILE_NAV .hamburger h1 {
+    background-color: #215732 !important;
+    text-decoration: none;
+    color: lavender;
+  }
+
   .mobile-menu {
     z-index: 10000000000000;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
     margin: 0;
     padding: 0;
@@ -69,7 +82,7 @@
   }
 
   .mobile-menu-header .logo {
-    padding: 2% 5%;
+    padding: 10% 10%;
   }
 
   .mobile-menu-body {
@@ -103,6 +116,7 @@
   }
 
   .ig-social {
+    padding: 5%;
     height: auto;
     width: 100%;
     display: flex;
@@ -124,7 +138,7 @@
   }
 
   .mobile-menu-header .close {
-    padding: 2% 5%;
+    padding: 10% 15%;
   }
 
   .footer-nav {
@@ -137,6 +151,14 @@
     z-index: 1000;
   }
 
+  .slide-card {
+    height: 100%;
+  }
+
+  .slides-bg {
+    height: 87%;
+  }
+
   /* GOODIES MENU */
 
   .menu-container {
@@ -144,9 +166,6 @@
     height: 100%;
   }
 
-  .menu-container .menu-card {
-  }
-  
   #FLOWERS,
   #CONCENTRATES,
   #EDIBLES,

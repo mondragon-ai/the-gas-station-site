@@ -6,7 +6,9 @@ function ThirdComponent() {
             <div className="designs third-slide-design-one">f</div>
             <div className="designs third-slide-design-two">p</div>
             <div className="designs third-slide-design-three">e</div>
-            <div className="slide-card" style={{ background: "yellow", width: "80%" }}></div>
+            <div className="slides-bg" style={{ width: "80%" }}>
+                <div className="slide-card" style={{width: "100%" }}></div>
+            </div>
         </div>
     )
 }
