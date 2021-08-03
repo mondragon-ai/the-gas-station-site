@@ -22,11 +22,14 @@ function Goodies() {
                 </div>
             </section>
 
-            <section className="selected" style={selected === "" ? {display: "none"} : {display: "flex"}  }>
-                {selected === "FLOWER" ? <Flowers /> : 
-                 selected === "CONCENTRATES" ? <Concentrates /> :
-                 selected === "EDIBLES" ? <Edibles /> : 
-                 selected === "GEAR" ? <Gear /> : null }
+            <section className="selected" style={ selected === "" ? {display: "none"} : {display: "flex"}  }>
+                {
+                    selected === "FLOWER" ? <Flowers /> : 
+                    selected === "CONCENTRATES" ?  <Flowers />:
+                    selected === "EDIBLES" ?  <Flowers /> : 
+                    selected === "GEAR" ? <Flowers /> : null
+                }
+                <button onClick={() => handleSelector('')} className="close-goodies">X</button>
             </section>
         </div>
     )

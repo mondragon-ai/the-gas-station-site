@@ -189,4 +189,17 @@
     top: 22% !important;
     left: 2%;
   }
+
+  #GOODIES_PAGE .selected {
+    z-index: 100000000000 !important;
+  }
+
+  #GOODIES_PAGE .close-goodies {
+    z-index: 100000000001 !important;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
