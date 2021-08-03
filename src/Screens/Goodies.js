@@ -15,10 +15,10 @@ function Goodies() {
         <div id="GOODIES_PAGE" className="">
             <section className="menu" style={selected === "" ? {display: "flex"}  : {display: "none"}  }>
                 <div className="menu-container">
-                    <div onClick={() => handleSelector('FLOWER')} className="menu-card">FLOWER</div>
-                    <div onClick={() => handleSelector('EDIBLES')}  className="menu-card">EDIBLES</div>
-                    <div onClick={() => handleSelector('CONCENTRATES')}  className="menu-card">CONENTRATES</div>
-                    <div onClick={() => handleSelector('GEAR')}  className="menu-card">GEAR</div>
+                    <div onClick={() => handleSelector('FLOWER')} className="menu-card"><h1>FLOWER</h1></div>
+                    <div onClick={() => handleSelector('EDIBLES')}  className="menu-card"><h1>EDIBLES</h1></div>
+                    <div onClick={() => handleSelector('CONCENTRATES')}  className="menu-card"><h1>CONENTRATES</h1></div>
+                    <div onClick={() => handleSelector('GEAR')}  className="menu-card"><h1>GEAR</h1></div>
                 </div>
             </section>
 

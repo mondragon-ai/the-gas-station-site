@@ -1,12 +1,16 @@
 import React from 'react'
+import bkg from '../assets/images/about_hero_img-1800x974.jpeg'
+import bgVideo from '../assets/images/Top-Shelf-Cannabis-HB.mp4'
 
 function About() {
     return (
         <div id="ABOUT_PAGE">
             <section className="hero-home">
                 <div className="hero-container">
-                    <h1>Hand Crafted Cannabis</h1>
-                    <img src="" alt="" />
+                    <h1>Cheapest </h1>
+                    <br />
+                    <h1 style={{left: "7%", top: "20%"}}>Gas 24/7</h1>
+                    <img src={bkg} alt="" />
                 </div>
             </section>
             <section className="about">
@@ -32,13 +36,16 @@ function About() {
                 </div>
             </section>
             <section className="vid-bg">
-                <video src=""></video>
+                <video style={{ height: "100%", width: "auto" }} loop autoPlay>
+                    <source src={bgVideo} type="video/ogg" />
+                    <source src={bgVideo} type="video/mp4" />
+                </video>
             </section>
             <section className="location">
                 LOCATION
             </section>
             <section className="special">
-                <div className="img-show"></div>
+                <div className="special-bg"></div>
                 <div className="special-text">
                     <p>lorem Ipsum</p>
                     <button className="learn-more">VIEW ALL</button>
