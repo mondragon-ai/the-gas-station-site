@@ -9,10 +9,10 @@ function NavTop() {
                 <div><NavLink to="/">HOME</NavLink></div>
                 <div><NavLink to="/goodies">GOODIES</NavLink></div>
                 <div><NavLink to="/about">ABOUT</NavLink></div>
-                <div>ORDER</div>
+                <div><NavLink to="/">ORDER</NavLink></div>
             </div>
             <div style={{  flex: 1 }} className="nav-social">
-                <div>Let's Talks!</div>
+                <div><NavLink to="/">Let's Talks!</NavLink></div>
             </div>
         </nav>
     )
