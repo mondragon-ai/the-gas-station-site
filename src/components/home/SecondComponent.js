@@ -1,13 +1,24 @@
 import React from 'react'
 import cinderella from '../../assets/images/cinderella-gif.gif'
-import head from '../../assets/images/icon-head-planet.png'
-import sparkle from '../../assets/images/icon-weed-sparkle-gif.gif'
+import head from '../../assets/images/icons/icon-head-planet.png'
+import sparkle from '../../assets/images/icons/icon-weed-sparkle-gif.gif'
+import Tilt from 'react-tilt'
 
 function SecondComponent() {
     return (
         <div id="SLIDES" className="second-slide" >
-            <div className="designs second-slide-design-two"><img src={head} alt="" /></div>
-            <div className="designs second-slide-design-three"><img src={sparkle} alt="" /></div>
+            <Tilt
+                style={{transform: "rotate(-30deg)"}}
+                className="designs first-slide-design-one"
+            >
+                <img src={head} alt="" />
+            </Tilt>
+            <Tilt
+                style={{transform: "rotate(-30deg)"}}
+                className="designs first-slide-design-two"
+            >
+                <img src={sparkle} alt="" />
+            </Tilt>
             <div className="slides-bg" style={{ width: "80%" }}>
                 <div className="designs second-slide-design-one"><img src={cinderella} alt="" /></div>
                 <div className="slide-card" style={{ width: "100%" }}>

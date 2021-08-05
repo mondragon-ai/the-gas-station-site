@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Young-Serif-Regular";
+  src: local("YoungSerif"),
+    url("./assets/fonts/YoungSerif-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Vollkorn-Regular";
+  src: local("YoungSerif"),
+    url("./assets/fonts/Vollkorn-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Young-Serif-Regular";
+  src: local("YoungSerif"),
+    url("./assets/fonts/YoungSerif-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Young-Serif-Regular";
+  src: local("YoungSerif"),
+    url("./assets/fonts/YoungSerif-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Young-Serif-Regular";
+  src: local("YoungSerif"),
+    url("./assets/fonts/YoungSerif-Regular.woff") format("woff");
+}
+
 .app {
   position: relative;
   text-align: center;
@@ -45,7 +73,7 @@
 /* ======================================= */
 
 html {
-  background-color: rgba(245, 242, 241, 1);
+  background-color: #222222;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -56,17 +84,18 @@ html {
 
 * {
   position: relative;
-  background-color: rgba(245, 242, 241, 1);
+  background-color: #ffff;
   text-decoration: none;
   width: auto;
   height: auto;
   margin: 0;
   padding: 0;
-  border: 1px solid olive;
+  font-family: "Young-Serif-Regular";
+  /* border: 1px solid olive; */
 }
 
 header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -128,6 +157,10 @@ li {
   list-style-type: none;
 }
 
+p {
+  font-family: "Vollkorn-Regular";
+}
+
 /* =======================================
 /* 2. NAV
 /* ======================================= */
@@ -168,6 +201,10 @@ li {
   align-items: center;
 }
 
+.nav-tabs a {
+  color: #f7941d;
+}
+
 .nav-tabs div {
   height: 5vh;
   width: 10vw;
@@ -192,6 +229,10 @@ li {
   align-items: center;
 }
 
+.nav-social a {
+  color: #222222;
+}
+
 .nav-social div {
   margin: 0 2% !important;
   width: auto !important;
@@ -212,7 +253,7 @@ li {
 }
 
 #MAIN-NAV .logo {
-  background-color: #215732;
+  background-color: #8dd4bd;
   margin: 0;
   padding: 0;
   width: 20%;
@@ -223,7 +264,7 @@ li {
 }
 
 #MAIN-NAV .hamburger {
-  background-color: #215732;
+  background-color: #8dd4bd;
   margin: 0;
   padding: 0;
   width: 20%;
@@ -234,7 +275,7 @@ li {
 }
 
 #MAIN-NAV .logo a {
-  background-color: #215732 !important;
+  background-color: #8dd4bd !important;
   text-decoration: none;
   color: lavender;
 }
@@ -247,6 +288,17 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-nav div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav a {
+  font-family: "Vollkorn-Regular";
 }
 
 /* =======================================
@@ -360,7 +412,8 @@ li {
 .first-slide .designs:nth-child(1) {
   position: absolute;
   top: 15%;
-  transform: rotate(-30deg);
+  transform: perspective(1000px) rotateX(-30deg) rotateY(-30deg)
+    scale3d(1, 1, 1);
 }
 
 .first-slide .designs:nth-child(2) {
@@ -640,8 +693,8 @@ li {
   box-sizing: border-box;
   border: 1px solid rgb(185, 185, 185);
   opacity: 0.4;
-  background: url("./assets/images/Sour-Strawberry-2-min.jpeg") no-repeat fixed
-    center;
+  background: url("./assets/images/strains/Sour-Strawberry-2-min.jpeg")
+    no-repeat fixed center;
 }
 
 .menu-container .menu-card:hover {
@@ -701,20 +754,40 @@ li {
   border: 1px solid aliceblue;
 }
 
+#FLOWERS .strains h1 {
+  background: #dfe5ea;
+}
+
+#FLOWERS .strains h3 {
+  background: #dfe5ea;
+}
+
+#FLOWERS .strains span {
+  background: #dfe5ea;
+}
+
+#FLOWERS .strains p {
+  background: #dfe5ea;
+}
+
 #FLOWERS .strains:hover h1 {
   color: rgb(17, 17, 17);
+  background: #dfe5ea;
 }
 
 #FLOWERS .strains:hover h3 {
   color: rgb(17, 17, 17);
+  background: #dfe5ea;
 }
 
 #FLOWERS .strains:hover span {
   color: rgb(17, 17, 17);
+  background: #dfe5ea;
 }
 
 #FLOWERS .strains:hover p {
   color: rgb(17, 17, 17);
+  background: #dfe5ea;
 }
 
 .strain-top {

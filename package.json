@@ -11,6 +11,8 @@
     "react-page-scroller": "^2.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-spring": "^9.2.4",
+    "react-tilt": "^0.1.4",
     "use-3d-effect": "^1.1.0",
     "web-vitals": "^1.1.2"
   },

@@ -1,10 +1,10 @@
 import React from 'react'
 import Strain from './Strain'
-import mandarin from '../../assets/images/Mandarin-Sunset-min.jpeg'
-import texas from '../../assets/images/Texas-Shoreline-2-min.jpeg'
-import lost from '../../assets/images/Lost-Cause-2-min.jpeg'
-import og from '../../assets/images/Texas-Shoreline-2-min.jpeg'
-import sour from '../../assets/images/Lost-Cause-2-min.jpeg'
+import mandarin from '../../assets/images/strains/Mandarin-Sunset-min.jpeg'
+import texas from '../../assets/images/strains/Sour-Strawberry-2-min.jpeg'
+import lost from '../../assets/images/strains/Lost-Cause-2-min.jpeg'
+import og from '../../assets/images/strains/Texas-Shoreline-2-min.jpeg'
+import sour from '../../assets/images/strains/Lost-Cause-2-min.jpeg'
 
 const strains = [
     { title: "Purple Punch", img: mandarin, thc: 30, strain: 'Sativa', effects: 'Creative, Happy, Productive', taste: "earthy", aroma: 'heavy citris'},

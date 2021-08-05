@@ -1,6 +1,6 @@
 import React from 'react'
 import bkg from '../assets/images/about_hero_img-1800x974.jpeg'
-import bgVideo from '../assets/images/Top-Shelf-Cannabis-HB.mp4'
+import bgVideo from '../assets/videos/Top-Shelf-Cannabis-HB.mp4'
 
 function About() {
     return (
