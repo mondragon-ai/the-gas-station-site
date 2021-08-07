@@ -401,6 +401,15 @@ p {
   background-repeat: no-repeat;
 }
 
+.second-slide .slide-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .slide-card div {
   width: 100%;
 }
@@ -488,29 +497,31 @@ p {
 }
 
 .slides-bg .designs img {
-  transform: scaleX(-1) !important;
+  /* transform: scaleX(-1) ; */
+  position: absolute;
+
+  transform: rotate(90deg) scaleX(-1) !important ;
 }
 
 /* ================= SLIDE CARDS 2 - Product ================= */
 
-.second-slide .designs:nth-child(1) {
-  position: absolute;
-  top: 15%;
-  transform: rotate(-30deg);
+.second-slide .designs:nth-child(5) {
+  height: 60vh;
+  width: 55%;
+  top: 20%;
+  left: 10%;
 }
 
 .second-slide .designs:nth-child(2) {
   position: absolute;
   top: 65%;
   left: 55%;
-  transform: rotate(30deg);
 }
 
 .second-slide .designs:nth-child(2) {
   position: absolute;
   top: 25%;
   left: 10%;
-  transform: rotate(-10deg);
   height: 50vh;
   width: 45%;
 }
@@ -526,9 +537,9 @@ p {
 
 .second-slide .designs:nth-child(4) {
   position: absolute;
-  top: 15%;
-  left: 75%;
-  transform: rotate(30deg);
+  top: 5%;
+  left: 5%;
+  height: 25%;
 }
 
 .designs img {
@@ -551,7 +562,8 @@ p {
 
 .second-slide .text {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  margin: 0 0 15% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -559,7 +571,8 @@ p {
 }
 
 .second-slide .text h2,
-.second-slide .text h1 {
+.second-slide .text h1,
+.second-slide .text p {
   margin-right: 15%;
 }
 

@@ -24,7 +24,6 @@ function FirstComponent() {
                 <img src={cloudOne} alt="" />
             </Tilt>
 
-
             <Tilt className="designs first-slide-design-4">
                 <img src={gas} alt="" />
             </Tilt>

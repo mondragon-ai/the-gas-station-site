@@ -24,8 +24,9 @@ function App() {
     window.addEventListener('resize', () => {
       setWidth(window.innerWidth)
     })
+
+    load(false);
     
-    load (false)
     return () => {
       window.removeEventListener("resize", () => {
         setWidth(window.innerWidth)
@@ -34,17 +35,14 @@ function App() {
 
   }, []);
 
+  if (!isLoading) {
+    if (!is21) {
+      return (<Age is21={is21} setAge={setAge} />)
+    } else {
+      return ( <RouterApp data={w} /> );
+    }
+  } else { return (<Loading />) }
   
-
-  if (!is21) {
-    return (<Age is21={is21} setAge={setAge} />)
-  } else {
-    return ( <>
-      { !isLoading ? <RouterApp data={w} /> : <Loading />}
-    </>
-    );
-  }
-
 }
 
 const RouterApp = ({ data }) => {
