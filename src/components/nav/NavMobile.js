@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/graphics/gas/GAS-wavy-3-03.png';
 
 const Menu = (props) => {
 
-    console.log(props)
     return (
         <section className="mobile-menu">
             <div onClick={() => props.toggleMenu(!props.isOpen)} className="mobile-menu-header">
-                <div className="logo">LOGO</div>
+                <div className="logo">
+                    <img src={logo} alt="" />
+                </div>
                 <div className="close">X</div>
             </div>
             <div className="mobile-menu-body">
@@ -30,19 +32,24 @@ const Menu = (props) => {
 }
 
 function NavMobile() {
+
     const [isOpen, toggleMenu] = useState(false)
-    console.log("MOBILE NAV BAR ==> ", isOpen);
+
     return (
         <>
             <nav id="MOBILE_NAV" className="mobile-nav">
-                <div className="logo"><NavLink to="/" >LOGO</NavLink></div>
-                <div className="hamburger" onClick={() => toggleMenu(!isOpen)}><h1>HAM</h1></div> 
+                <div className="logo">
+                    <NavLink to="/" >
+                    <img src={logo} alt="" />
+                </NavLink></div>
+                <div className="hamburger" onClick={() => toggleMenu(!isOpen)}><h1>HAM</h1></div>
             </nav>
 
             {isOpen ? <Menu isOpen={isOpen} toggleMenu={toggleMenu} /> : null};
             
         </>
-    )
+    );
+
 }
 
 export default NavMobile

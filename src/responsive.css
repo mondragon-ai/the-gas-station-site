@@ -25,7 +25,7 @@
   }
 
   #MOBILE_NAV .logo {
-    background-color: #215732 !important;
+    background-color: #8dd4bd !important;
     position: relative;
     /* margin: 5% 0; */
     padding: 0px 0 17px 0;
@@ -37,13 +37,13 @@
   }
 
   #MOBILE_NAV .logo a {
-    background-color: #215732 !important;
+    background-color: #8dd4bd !important;
     text-decoration: none;
     color: lavender;
   }
 
   #MOBILE_NAV .hamburger {
-    background-color: #215732 !important;
+    background-color: #8dd4bd !important;
     position: relative;
     /* margin: 5% 0; */
     padding: 17px 0 0 0;
@@ -55,14 +55,14 @@
   }
 
   #MOBILE_NAV .hamburger h1 {
-    background-color: #215732 !important;
+    background-color: #8dd4bd !important;
     text-decoration: none;
     color: lavender;
   }
 
   .mobile-menu {
     z-index: 10000000000000;
-    /* background-color: blue; */
+    background-color: #fff;
     position: relative;
     margin: 0;
     padding: 0;
@@ -159,6 +159,15 @@
     height: 87%;
   }
 
+  .second-slide .designs:nth-child(2) img {
+    height: 31vh;
+    width: auto;
+  }
+
+  .slides-bg .designs img {
+    width: 30vw;
+  }
+
   /* GOODIES MENU */
 
   .menu-container {
@@ -186,8 +195,8 @@
   }
 
   .hero-container h1:nth-child(3) {
-    top: 22% !important;
-    left: 2%;
+    top: 18% !important;
+    left: 4%;
   }
 
   #GOODIES_PAGE .selected {
@@ -201,5 +210,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* ABOUT PAGE */
+
+  #ABOUT_PAGE h1,
+  .about h2,
+  .about h3,
+  .about h4,
+  .about h5,
+  .about p {
+    background: transparent;
+  }
+
+  #ABOUT_PAGE h1 {
+    font-size: 15vw;
+  }
+  #ABOUT_PAGE .hero-container:nth-child(3) {
+    font-size: 20vw;
+    top: 0;
   }
 }
