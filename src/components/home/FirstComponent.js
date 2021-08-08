@@ -13,29 +13,29 @@ function FirstComponent() {
     return (
         <div id="SLIDES" className="first-slide" >
 
-            <Tilt className="designs first-slide-design-1">
+            <div className="designs first-slide-design-1">
                 <img src={cloudThree} alt="" />
-            </Tilt>
+            </div>
 
-            <Tilt className="designs first-slide-design-2">
+            <div className="designs first-slide-design-2">
                 <img src={cloudTwo} alt="" />
-            </Tilt>
-            <Tilt className="designs first-slide-design-3">
+            </div>
+            <div className="designs first-slide-design-3">
                 <img src={cloudOne} alt="" />
-            </Tilt>
+            </div>
 
-            <Tilt className="designs first-slide-design-4">
+            <div className="designs first-slide-design-4">
                 <img src={gas} alt="" />
-            </Tilt>
-            <Tilt className="designs first-slide-design-5">
-                <img src={twenty4} alt="" />
-            </Tilt>
-            <Tilt className="designs first-slide-design-6" >
+            </div>
+            <div className="designs first-slide-design-5">
+                {/* <img src={twenty4} alt="" /> */}
+            </div>
+            <div className="designs first-slide-design-6" >
                 <img src={cat} alt="" />
-            </Tilt>
-            <Tilt className="designs first-slide-design-7" >
+            </div>
+            <div className="designs first-slide-design-7" >
                 <img src={smile} alt="" />
-            </Tilt>
+            </div>
 
 
             <div className="slides-bg" style={{ width: "80%" }}>

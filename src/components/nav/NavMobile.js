@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/graphics/gas/GAS-wavy-3-03.png';
+import menuLogo from '../../assets/images/graphics/gas/logo-tiedie.png';
+import logo from '../../assets/images/graphics/gas/GAS-wavy-2-03.png';
 
 const Menu = (props) => {
 
     return (
         <section className="mobile-menu">
+            <div className="mobile-menu-container"></div>
             <div onClick={() => props.toggleMenu(!props.isOpen)} className="mobile-menu-header">
                 <div className="logo">
-                    <img src={logo} alt="" />
+                    <img src={menuLogo} alt="" />
                 </div>
-                <div className="close">X</div>
+                <div className="close"><h1>X</h1></div>
             </div>
             <div className="mobile-menu-body">
                 <ul className="mobile-nav">

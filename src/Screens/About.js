@@ -36,8 +36,7 @@ function About() {
                 </div>
             </section>
             <section className="vid-bg">
-                <video style={{ height: "100%", width: "auto" }} loop autoPlay>
-                    <source src={bgVideo} type="video/ogg" />
+                <video style={{ height: "100%", width: "auto" }} loop controls  >
                     <source src={bgVideo} type="video/mp4" />
                 </video>
             </section>

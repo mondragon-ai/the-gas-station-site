@@ -24,9 +24,13 @@ function App() {
     window.addEventListener('resize', () => {
       setWidth(window.innerWidth)
     })
-
-    load(false);
     
+    setTimeout(() => {
+      load(false);
+    }, 1500);
+    
+    load(false);
+
     return () => {
       window.removeEventListener("resize", () => {
         setWidth(window.innerWidth)
@@ -46,6 +50,7 @@ function App() {
 }
 
 const RouterApp = ({ data }) => {
+
   return (<div className="app">
     <Router>
       <div >

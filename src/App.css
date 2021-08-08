@@ -46,7 +46,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +114,7 @@ body {
   background-color: rgba(245, 242, 241, 1);
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -134,7 +134,7 @@ footer {
 section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -312,7 +312,7 @@ p {
 #home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -323,7 +323,7 @@ p {
 .home-screen {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -394,7 +394,7 @@ p {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  background: url(./assets/images/background/weed\ leafs\ and\ wavy\ banner.png);
+  background: url(./assets/images/background/web-wavy-background.png);
   /* 0 0; */
   background-position: center;
   background-size: cover;
@@ -631,6 +631,8 @@ p {
 }
 
 .age-header {
+  position: absolute;
+  top: 0%;
   height: 10%;
   width: 100%;
 }
@@ -746,12 +748,23 @@ p {
   box-sizing: border-box;
   border: 1px solid rgb(185, 185, 185);
   opacity: 0.4;
-  background: url("./assets/images/strains/Sour-Strawberry-2-min.jpeg")
-    no-repeat fixed center;
+  background: url("./assets/images/strains/Sour-Strawberry-2-min.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .menu-container .menu-card:hover {
   opacity: 0.9;
+}
+
+.menu-card h1 {
+  background-color: #fff;
+  padding: 1% 2%;
+}
+
+.menu-container .menu-card:hover h1 {
+  color: #222222;
 }
 
 #FLOWERS {
@@ -1028,7 +1041,7 @@ p {
 
 #ABOUT_PAGE section {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-grow: 1;
@@ -1038,7 +1051,7 @@ p {
 }
 
 .hero-home {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -1095,7 +1108,7 @@ p {
 .vid-bg {
   background: rgb(97, 97, 97);
   width: 100vw !important;
-  height: 100vh !important;
+  height: 100% !important;
   overflow: hidden;
 }
 
@@ -1103,14 +1116,14 @@ p {
   position: relative;
   background: rgb(32, 34, 37);
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
 .special {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -1118,7 +1131,7 @@ p {
   background-image: url("https://media3.giphy.com/media/SEEZV9PrWRfVu/200.gif");
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 100000 !important;
   background-size: cover;
   background-color: rgb(32, 34, 37);
@@ -1134,7 +1147,7 @@ p {
   position: absolute;
   /* z-index: 10000000000000 !important; */
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: linear-gradient(
     to right,
@@ -1153,7 +1166,7 @@ p {
   position: relative;
   z-index: 10000000000000 !important;
   width: 100vw;
-  height: 100vh;
+  height: 100;
   overflow: hidden;
   background: linear-gradient(0deg, rgb(32, 34, 37), #d1d1d110) repeat-x !important;
 }
@@ -1161,7 +1174,7 @@ p {
 .location-container {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
