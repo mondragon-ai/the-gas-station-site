@@ -3,8 +3,23 @@ import bkg from '../assets/images/about_hero_img-1800x974.jpeg'
 import bgVideo from '../assets/videos/Top-Shelf-Cannabis-HB.mp4'
 
 function About() {
+    
+    var [h, setHeight] = React.useState(window.innerHeight)
+  
+    React.useEffect(() => {
+      window.addEventListener('resize', () => {
+            setHeight(window.innerHeight)
+      })
+  
+      return () => {
+        window.removeEventListener("resize", () => {
+            setHeight(window.innerHeight)
+        })
+      }
+  
+    }, []);
     return (
-        <div id="ABOUT_PAGE">
+        <div id="ABOUT_PAGE"  style={{ height: `${h}px` }}>
             <section className="hero-home">
                 <div className="hero-container">
                     <h1>Cheapest </h1>
@@ -36,7 +51,7 @@ function About() {
                 </div>
             </section>
             <section className="vid-bg">
-                <video style={{ height: "100%", width: "auto" }} loop controls  >
+                <video style={{ height: "100%", width: "auto" }} loop controls  playsinline autoPlay>
                     <source src={bgVideo} type="video/mp4" />
                 </video>
             </section>

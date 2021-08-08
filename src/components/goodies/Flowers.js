@@ -14,13 +14,12 @@ const strains = [
     { title: "OG Orange", img: og, thc: 23, strain: 'Hybrid', effects: 'Creative, Happy, Productive', taste: "earthy", aroma: 'heavy citris'},
 ]
 
-
 const strain_ln = strains.length;
 
 function Flowers(props) {
 
     return (
-        <section id="FLOWERS" style={{ background: "#FFF", }}>
+        <section id="FLOWERS" style={{ background: "#FFF", height: `${props.data}px`}}>
             {strains && strains.map((strain) => {
                 console.log((strain_ln % 2), strain);
                 return (

@@ -5,14 +5,29 @@ import Edibles from '../components/goodies/Edibles';
 import Gear from '../components/goodies/Gear';
 
 function Goodies() {
-    const [selected, select] = useState('')
+
+    const [selected, select] = useState('');
+    var [h, setHeight] = React.useState(window.innerHeight)
+  
+    React.useEffect(() => {
+      window.addEventListener('resize', () => {
+            setHeight(window.innerHeight)
+      })
+  
+      return () => {
+        window.removeEventListener("resize", () => {
+            setHeight(window.innerHeight)
+        })
+      }
+  
+    }, []);
 
     const handleSelector = (selected_item) => {
         select(selected_item);
     }
 
     return (
-        <div id="GOODIES_PAGE" className="">
+        <div id="GOODIES_PAGE" style={{height: `${h}px`}}>
             <section className="menu" style={selected === "" ? {display: "flex"}  : {display: "none"}  }>
                 <div className="menu-container">
                     <div onClick={() => handleSelector('FLOWER')} className="menu-card"><h1>FLOWER</h1></div>
@@ -24,10 +39,10 @@ function Goodies() {
 
             <section className="selected" style={ selected === "" ? {display: "none"} : {display: "flex"}  }>
                 {
-                    selected === "FLOWER" ? <Flowers /> : 
-                    selected === "CONCENTRATES" ?  <Flowers />:
-                    selected === "EDIBLES" ?  <Flowers /> : 
-                    selected === "GEAR" ? <Flowers /> : null
+                    selected === "FLOWER" ? <Flowers data={h} /> : 
+                    selected === "CONCENTRATES" ?  <Flowers data={h} />:
+                    selected === "EDIBLES" ?  <Flowers data={h}/> : 
+                    selected === "GEAR" ? <Flowers data={h}/> : null
                 }
                 <button onClick={() => handleSelector('')} className="close-goodies">X</button>
             </section>

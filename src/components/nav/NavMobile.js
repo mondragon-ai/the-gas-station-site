@@ -4,9 +4,24 @@ import menuLogo from '../../assets/images/graphics/gas/logo-tiedie.png';
 import logo from '../../assets/images/graphics/gas/GAS-wavy-2-03.png';
 
 const Menu = (props) => {
+    
+    var [h, setHeight] = React.useState(window.innerHeight)
+  
+    React.useEffect(() => {
+      window.addEventListener('resize', () => {
+            setHeight(window.innerHeight)
+      })
+  
+      return () => {
+        window.removeEventListener("resize", () => {
+            setHeight(window.innerHeight)
+        })
+      }
+  
+    }, []);
 
     return (
-        <section className="mobile-menu">
+        <section className="mobile-menu" style={{height: `${h}px`}}>
             <div className="mobile-menu-container"></div>
             <div onClick={() => props.toggleMenu(!props.isOpen)} className="mobile-menu-header">
                 <div className="logo">
@@ -30,7 +45,7 @@ const Menu = (props) => {
                 <div></div>
             </div>
         </section>
-    );
+    )
 }
 
 function NavMobile() {

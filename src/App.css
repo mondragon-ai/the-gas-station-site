@@ -30,7 +30,7 @@
   position: relative;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .App-logo {
@@ -685,7 +685,7 @@ p {
 /* ======================================= */
 
 #GOODIES_PAGE {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -697,7 +697,11 @@ p {
 }
 
 #GOODIES_PAGE .menu {
-  position: inherit;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -705,7 +709,11 @@ p {
 }
 
 #GOODIES_PAGE .selected {
-  position: inherit;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -715,6 +723,8 @@ p {
 #GOODIES_PAGE .close-goodies {
   z-index: 100000000000 !important;
   display: none;
+  position: absolute;
+  bottom: 0%;
 }
 
 .menu-container {
@@ -1026,7 +1036,7 @@ p {
 /* ======================================= */
 
 #ABOUT_PAGE {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -1040,11 +1050,13 @@ p {
 }
 
 #ABOUT_PAGE section {
+  /* flex-grow: 1; */
   position: relative;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1202,7 +1214,7 @@ p {
 
    ======================================= */
 #LOADING {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;

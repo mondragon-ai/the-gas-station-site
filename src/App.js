@@ -28,7 +28,7 @@ function App() {
     setTimeout(() => {
       load(false);
     }, 1500);
-    
+
     load(false);
 
     return () => {
@@ -53,7 +53,7 @@ const RouterApp = ({ data }) => {
 
   return (<div className="app">
     <Router>
-      <div >
+      <div style={{}}>
         <header id="MAIN_HEADER">
           <NavTop />
           {data <= 768 ? <NavMobile /> : <NavBar />}
