@@ -12,6 +12,7 @@ import NavBar from './components/nav/NavBar';
 import NavFooter from './components/nav/NavFooter';
 import NavMobile from './components/nav/NavMobile';
 import Loading from './Screens/Loading';
+import Team from './Screens/Team'
 
 
 function App() {
@@ -62,6 +63,7 @@ const RouterApp = ({ data }) => {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} exact />
           <Route path="/goodies" exact component={Goodies} />
+          <Route path="/team" component={Team} />
         </Switch>
         <footer >
           <NavFooter />

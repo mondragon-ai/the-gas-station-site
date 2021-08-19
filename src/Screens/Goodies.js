@@ -44,7 +44,10 @@ function Goodies() {
                     selected === "EDIBLES" ?  <Flowers data={h}/> : 
                     selected === "GEAR" ? <Flowers data={h}/> : null
                 }
-                <button onClick={() => handleSelector('')} className="close-goodies">X</button>
+                <button onClick={() => handleSelector('')} className="close-goodies">
+                    <div></div>
+                    <div></div>
+                </button>
             </section>
         </div>
     )

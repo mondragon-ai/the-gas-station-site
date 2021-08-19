@@ -1,12 +1,13 @@
 import React from 'react'
-import logo from '../assets/images/Gas-Main-Logo-v1.png'
+import logo from '../assets/images/logo.png'
 
 function Age(props) {
     
     return (
         // TODO: BG-COLOR: #222
         <div id="AGE_VERTIFICATION">
-            <section className="age-verification">
+            {/* TODO: look at using a bkg-scr.  */}
+            <section className="age-verification"> 
                 <div className="age-header">
                     <div className="auth-logo"><img src={logo} style={{height: '10vh', width: "auto" }} alt="" /></div>
                 </div>

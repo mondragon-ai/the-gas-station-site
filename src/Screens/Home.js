@@ -21,6 +21,7 @@ export const Home = () => {
         setPage(number);
     };
 
+    // Using effect to setttle the laoding state. However, looking to delete
     useEffect(() => {
         
         setTimeout(() => {

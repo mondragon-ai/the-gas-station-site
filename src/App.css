@@ -279,6 +279,30 @@ p {
   align-items: center;
 }
 
+.close div {
+  background-color: #fff !important;
+  width: 2rem !important;
+  height: 0.25rem;
+  position: absolute;
+}
+
+.close div:first-child {
+  transform: rotate(45deg);
+}
+
+.close div:last-child {
+  transform: rotate(-45deg);
+}
+
+.hamburger div {
+  background-color: #fff !important;
+  width: 2rem !important;
+  height: 0.25rem;
+  margin: 3px;
+  padding: 0;
+  position: relative;
+}
+
 #MAIN-NAV .logo a {
   background-color: #8dd4bd !important;
   text-decoration: none;
@@ -339,7 +363,8 @@ p {
 
 .home-screen {
   opacity: 0.7;
-  background: url(./assets/images/background/color-blend-background.png);
+  /* background: url(./assets/images/background/color-blend-background.png); */
+  background-color: #fff;
 }
 
 #SLIDES {
@@ -381,6 +406,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  background: url(./assets/images/background/web-wavy-background.png);
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 .slide-card {
@@ -394,11 +424,11 @@ p {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  background: url(./assets/images/background/web-wavy-background.png);
-  /* 0 0; */
+  background: #2222220a;
+  /* background: url(./assets/images/background/web-wavy-background.png);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .second-slide .slide-card {
@@ -412,14 +442,17 @@ p {
 
 .slide-card div {
   width: 100%;
+  color: #8dd4bd;
 }
 
 .slide-card h1 {
   font-size: 7vh;
+  color: #8dd4bd;
 }
 
 .slide-card h2 {
   font-size: 5vh;
+  color: #8dd4bd;
 }
 
 .designs {
@@ -467,22 +500,28 @@ p {
 
 .first-slide .designs:nth-child(1) {
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 0%;
+  left: 10%;
   opacity: 0.8;
   height: 40%;
+  opacity: 0.5;
+  height: 56vh;
 }
 
 .first-slide .designs:nth-child(2) {
   position: absolute;
   top: 55%;
-  left: 15%;
+  left: 25%;
+  opacity: 0.3;
+  height: 56vh;
 }
 
 .first-slide .designs:nth-child(3) {
   position: absolute;
   top: 25%;
   left: 75%;
+  opacity: 0.6;
+  height: 56vh;
 }
 
 /*  */
@@ -1210,9 +1249,9 @@ p {
   margin-right: 15%;
 }
 
-/* ======================================= 
-
-   ======================================= */
+/* =======================================
+/* 7. LOADING PAGE
+/* ======================================= */
 #LOADING {
   height: 100%;
   width: 100%;
@@ -1223,4 +1262,50 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* =======================================
+/* 6. TEAM PAGE
+/* ======================================= */
+#TEAM {
+  /* height: 100%; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #222222;
+  overflow: scroll;
+}
+
+#TEAM h1 {
+}
+
+#TEAM .main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+}
+
+#TEAM .main .container-team {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
 }

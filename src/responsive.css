@@ -29,7 +29,7 @@
     position: absolute;
     top: 0;
     /* margin: 5% 0; */
-    padding: 0px 0 17px 0;
+    padding: 10px 0 10px 0;
     width: 40vw;
     height: 7vh;
     display: flex;
@@ -49,12 +49,13 @@
     position: absolute;
     bottom: 0;
     /* margin: 5% 0; */
-    padding: 17px 0 0 0;
+    padding: 5px 0;
     width: 40vw;
     height: 7vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #MOBILE_NAV .hamburger h1 {
@@ -149,7 +150,7 @@
   }
 
   .ig-social {
-    padding: 5%;
+    padding: 5% 10%;
     height: auto;
     width: 100%;
     display: flex;
@@ -164,6 +165,7 @@
 
   .ig-handle {
     margin: 2% 5%;
+    color: #fff;
   }
 
   .mobile-menu-body .mobile-nav .link {
@@ -171,10 +173,10 @@
   }
 
   .mobile-menu-header .close {
-    padding: 10% 15%;
+    padding: 0% 10%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end !important;
+    flex-direction: column;
+    align-content: flex-end;
     align-items: flex-end !important;
   }
 
@@ -255,9 +257,21 @@
     background-color: #8dd4bd;
     border-style: none;
     box-shadow: 1px -1px 19px 5px rgb(204 199 199);
-    font-family: "Young-Serif-Regular";
-    color: #fff;
-    font-size: 4vh;
+  }
+
+  #GOODIES_PAGE .close-goodies div {
+    background-color: #fff !important;
+    width: 2rem !important;
+    height: 0.25rem;
+    position: absolute;
+  }
+
+  #GOODIES_PAGE .close-goodies div:first-child {
+    transform: rotate(45deg);
+  }
+
+  #GOODIES_PAGE .close-goodies div:last-child {
+    transform: rotate(-45deg);
   }
 
   /* ABOUT PAGE */

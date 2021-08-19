@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import menuLogo from '../../assets/images/graphics/gas/logo-tiedie.png';
-import logo from '../../assets/images/graphics/gas/GAS-wavy-2-03.png';
+import menuLogo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Menu = (props) => {
     
@@ -27,20 +29,23 @@ const Menu = (props) => {
                 <div className="logo">
                     <img src={menuLogo} alt="" />
                 </div>
-                <div className="close"><h1>X</h1></div>
+                <div className="close">
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
             <div className="mobile-menu-body">
                 <ul className="mobile-nav">
                     <li className="link"><NavLink onClick={() => props.toggleMenu(!props.isOpen)}  to="/about" >ABOUT</NavLink></li>
                     <li className="link"><NavLink onClick={() => props.toggleMenu(!props.isOpen)}  to="/goodies" >THE GOODS</NavLink></li>
                     <li className="link"><a href="">ORDER</a></li>
-                    <li onClick={() => console.log("SHOW LOCATIONS!")} className="link">PICK UP</li>
+                    <li onClick={() => console.log("SHOW LOCATIONS!")} className="link"><a href="">PICK UP</a></li>
                 </ul>
             </div>
             <div className="mobile-menu-footer">
                 <div className="ig-social">
-                    <div className="ig-handle">@IG_HANDLE</div>
-                    <a href="" className="ig-link">IG</a>
+                    <div className="ig-handle">@GasStationDispensary</div>
+                    <a href="https://www.instagram.com/gasstationdispensary/" target="_blank" className="ig-link"><FontAwesomeIcon icon={faInstagram} /></a>
                 </div>
                 <div></div>
             </div>
@@ -59,7 +64,11 @@ function NavMobile() {
                     <NavLink to="/" >
                     <img src={logo} alt="" />
                 </NavLink></div>
-                <div className="hamburger" onClick={() => toggleMenu(!isOpen)}><h1>HAM</h1></div>
+                <div className="hamburger" onClick={() => toggleMenu(!isOpen)}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </nav>
 
             {isOpen ? <Menu isOpen={isOpen} toggleMenu={toggleMenu} /> : null};
