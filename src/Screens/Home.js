@@ -11,8 +11,9 @@ import Loading from "./Loading";
 // }
 
 
-export const Home = () => {
+export const Home = ({changePath}) => {
 
+    changePath("/home")
 
     var [currentPage, setPage] = useState(0);
     var [isLoading, load] = useState(true)

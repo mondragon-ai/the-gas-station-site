@@ -4,7 +4,9 @@ import Concentrates from '../components/goodies/Concentrates';
 import Edibles from '../components/goodies/Edibles';
 import Gear from '../components/goodies/Gear';
 
-function Goodies() {
+function Goodies({ changePath }) {
+
+    changePath("/goodies")
 
     const [selected, select] = useState('');
     var [h, setHeight] = React.useState(window.innerHeight)

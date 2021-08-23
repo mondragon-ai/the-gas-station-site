@@ -2,7 +2,9 @@ import React from 'react'
 import bkg from '../assets/images/about_hero_img-1800x974.jpeg'
 import bgVideo from '../assets/videos/Top-Shelf-Cannabis-HB.mp4'
 
-function About() {
+function About({ changePath }) {
+    
+    changePath("/about");
     
     var [h, setHeight] = React.useState(window.innerHeight)
   
@@ -51,7 +53,7 @@ function About() {
                 </div>
             </section>
             <section className="vid-bg">
-                <video style={{ height: "100%", width: "auto" }} loop controls  playsinline autoPlay>
+                <video style={{ height: "100%", width: "auto" }} loop controls  playsInline autoPlay>
                     <source src={bgVideo} type="video/mp4" />
                 </video>
             </section>

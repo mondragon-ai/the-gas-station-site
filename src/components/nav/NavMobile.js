@@ -38,8 +38,8 @@ const Menu = (props) => {
                 <ul className="mobile-nav">
                     <li className="link"><NavLink onClick={() => props.toggleMenu(!props.isOpen)}  to="/about" >ABOUT</NavLink></li>
                     <li className="link"><NavLink onClick={() => props.toggleMenu(!props.isOpen)}  to="/goodies" >THE GOODS</NavLink></li>
-                    <li className="link"><a href="">ORDER</a></li>
-                    <li onClick={() => console.log("SHOW LOCATIONS!")} className="link"><a href="">PICK UP</a></li>
+                    <li className="link"><a href="#">ORDER</a></li>
+                    <li onClick={() => console.log("SHOW LOCATIONS!")} className="link"><a href="#">PICK UP</a></li>
                 </ul>
             </div>
             <div className="mobile-menu-footer">
@@ -61,7 +61,7 @@ function NavMobile() {
         <>
             <nav id="MOBILE_NAV" className="mobile-nav">
                 <div className="logo">
-                    <NavLink to="/" >
+                    <NavLink to="/home" >
                     <img src={logo} alt="" />
                 </NavLink></div>
                 <div className="hamburger" onClick={() => toggleMenu(!isOpen)}>
