@@ -18,8 +18,25 @@ const strain_ln = strains.length;
 
 function Flowers(props) {
 
+    var [w, setHeight] = React.useState(window.innerWidth)
+  
+    React.useEffect(() => {
+      window.addEventListener('resize', () => {
+            setHeight(window.innerWidth)
+      })
+  
+      return () => {
+        window.removeEventListener("resize", () => {
+            setHeight(window.innerWidth)
+        })
+      }
+  
+    }, []);
+
+    const h = w <  750 ? `${props.data}px` : "80vh";
+
     return (
-        <section id="FLOWERS" style={{ background: "#FFF", height: `${props.data}px`}}>
+        <section id="FLOWERS" style={{ background: "#FFF", height: `${h}`}}>
             {strains && strains.map((strain) => {
                 console.log((strain_ln % 2), strain);
                 return (

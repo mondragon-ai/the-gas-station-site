@@ -6,7 +6,10 @@ function Age(props) {
     return (
         // TODO: BG-COLOR: #222
         <div id="AGE_VERTIFICATION">
-            {/* TODO: look at using a bkg-scr.  */}
+            
+            {/* Background-img */}
+            <div className="bg-img"></div>
+
             <section className="age-verification"> 
                 <div className="age-header">
                     <div className="auth-logo"><img src={logo} style={{height: '10vh', width: "auto" }} alt="" /></div>

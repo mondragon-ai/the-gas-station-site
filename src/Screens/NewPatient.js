@@ -5,8 +5,10 @@ function NewPatient({ changePath }) {
     changePath("/patient/new");
 
     return (
-        <div>
-            
+        <div id="NEW_PATEINT" >
+            {/* Background-img */}
+            <div className="bg-img"></div>
+            <section className="main"></section>
         </div>
     )
 }

@@ -6,6 +6,10 @@ function Splash({ toggleMenu, changePath }) {
     changePath('/');
     return ( 
         <div id="SPLASH">
+
+            {/* Background-img */}
+            <div className="bg-img"></div>
+            
             <section className="main">
                 <div className="container">
                     <div onClick={() => { toggleMenu(true); console.log(true)}} className="button-nav">

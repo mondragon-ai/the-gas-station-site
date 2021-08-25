@@ -53,7 +53,7 @@ function About({ changePath }) {
                 </div>
             </section>
             <section className="vid-bg">
-                <video style={{ height: "100%", width: "auto" }} loop controls  playsInline autoPlay>
+                <video id="background-video" style={{ height: "100%", width: "auto" }} loop controls  playsInline autoPlay>
                     <source src={bgVideo} type="video/mp4" />
                 </video>
             </section>
