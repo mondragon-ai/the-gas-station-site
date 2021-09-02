@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, Redirect } from 'react-router-dom';
 
 function Splash({ toggleMenu, changePath }) {
 
+    const [h, setHeight] = useState(window.innerHeight)
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setHeight(window.innerHeight);
+        })
+
+        return () => {
+            window.addEventListener('resize', () => {
+                setHeight(window.innerHeight);
+            })
+        }
+    }, [])
+
     changePath('/');
     return ( 
-        <div id="SPLASH">
+        <div id="SPLASH" stye={{height: `${h}px`}}> 
 
             {/* Background-img */}
             <div className="bg-img"></div>

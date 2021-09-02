@@ -5,6 +5,7 @@ import texas from '../../assets/images/strains/Sour-Strawberry-2-min.jpeg'
 import lost from '../../assets/images/strains/Lost-Cause-2-min.jpeg'
 import og from '../../assets/images/strains/Texas-Shoreline-2-min.jpeg'
 import sour from '../../assets/images/strains/Lost-Cause-2-min.jpeg'
+import { NavLink } from 'react-router-dom'
 
 const strains = [
     { title: "Purple Punch", img: mandarin, thc: 30, strain: 'Sativa', effects: 'Creative, Happy, Productive', taste: "earthy", aroma: 'heavy citris'},
@@ -40,10 +41,12 @@ function Flowers(props) {
             {strains && strains.map((strain) => {
                 console.log((strain_ln % 2), strain);
                 return (
-                <Strain data={strain} key={strain.title} />)
-                })
+                    <NavLink key={strain.title} to={`/stain/${strain.title}`}>
+                        <Strain data={strain}  />
+                    </NavLink>
+                )})
             }
-            {strain_ln % 2 !== 0 ? (<div className="strains"></div>) : null}
+            {strain_ln % 2 !== 0 ? (<a className=""></a>) : null}
             
         </section>
     )

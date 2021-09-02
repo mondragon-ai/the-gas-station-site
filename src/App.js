@@ -15,6 +15,7 @@ import Loading from './Screens/Loading';
 import Team from './Screens/Team'
 import Splash from './Screens/Splash';
 import NewPatient from './Screens/NewPatient';
+import FlowerDetail from './components/goodies/FlowerDetail';
 
 
 function App() {
@@ -68,14 +69,15 @@ const RouterApp = ({ data }) => {
         </header>
         <Switch>
           <Route path="/" exact ><Splash toggleMenu={toggle} changePath={changePath} /></Route>
-          <Route path="/patient/new" >  <NewPatient changePath={changePath} /> </Route>
+          <Route path="/patient/new" >  <NewPatient changePath={changePath}  /> </Route>
           <Route path="/home" > <Home changePath={changePath} /> </Route>
           <Route path="/about" > <About changePath={changePath} /> </Route>
           <Route path="/goodies"> <Goodies changePath={changePath} /> </Route>
           <Route path="/team" > <Team changePath={changePath} /> </Route>
+          <Route path="/goodies/flower/:id" > <FlowerDetail changePath={changePath} /> </Route>
         </Switch>
         <footer >
-          <NavFooter />
+          {path === "/" ? null : <NavFooter path={path} />}
         </footer>
       </div>
     </Router>
