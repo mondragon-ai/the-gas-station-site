@@ -13,37 +13,38 @@ function FirstComponent() {
     return (
         <div id="SLIDES" className="first-slide" >
 
-            <div className="designs first-slide-design-1">
+            {/* <div className="designs first-slide-design-1">
                 <img src={cloudThree} alt="" />
-            </div>
+            </div> */}
 
-            <div className="designs first-slide-design-2">
+            {/* <div className="designs first-slide-design-2">
                 <img src={cloudTwo} alt="" />
             </div>
             <div className="designs first-slide-design-3">
                 <img src={cloudOne} alt="" />
-            </div>
+            </div> */}
 
-            <div className="designs first-slide-design-4">
+            {/* <div className="designs first-slide-design-4">
                 <img src={gas} alt="" />
-            </div>
-            <div className="designs first-slide-design-5">
-                {/* <img src={twenty4} alt="" /> */}
+            </div> */}
+            {/* <div className="designs first-slide-design-5">
+                <img src={twenty4} alt="" />
             </div>
             <div className="designs first-slide-design-6" >
                 <img src={cat} alt="" />
             </div>
             <div className="designs first-slide-design-7" >
                 <img src={smile} alt="" />
-            </div>
+            </div> */}
 
 
-            <div className="slides-bg" style={{ width: "80%" }}>
+            <div className="slides-bg " style={{ width: "80%" }}>
+                <div className="slides-bg-first"></div>
                 <div className="slide-card" style={{ width: "100%" }}>
-                    <div><p className="">. 01 .</p></div>
+                    {/* <div><p className="">. 01 .</p></div> */}
                     <div>
-                        <h2>Cheapest</h2> 
-                        <h1>Gas 24/7</h1>
+                        {/* <h2>Cheapest</h2> 
+                        <h1>Gas 24/7</h1> */}
                     </div>
                 </div>
             </div>

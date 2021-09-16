@@ -437,10 +437,20 @@ button {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  background: url(./assets/images/background/web-wavy-background.png);
-  /* background-position: center;
+  background: url(./assets/images/home-graphics/content-card-background.png);
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+}
+
+.slides-bg-first {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/home-graphics/landing-page-graphic.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .slide-card {
@@ -883,7 +893,7 @@ button {
   background-color: transparent;
   position: relative;
   width: 100% !important;
-  height: 60% !important;
+  /* height: 60% !important; */
   flex: 1;
   display: flex;
   flex-basis: 40%;
@@ -901,7 +911,7 @@ button {
 
 #FLOWERS .strains {
   background-color: transparent;
-  position: relative;
+  /* position: relative;
   width: 100% !important;
   height: 100% !important;
   flex: 1;
@@ -913,7 +923,7 @@ button {
   align-content: space-around;
   background-color: transparent;
   color: white;
-  box-sizing: border-box;
+  box-sizing: border-box; */
   overflow: hidden;
   border: 1px solid aliceblue;
 }

@@ -200,6 +200,17 @@
 
   .slides-bg {
     height: 87%;
+    background: url(./assets/images/home-graphics/content-card-background-mobile.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .slides-bg-first {
+    background: url(./assets/images/home-graphics/website-background-mobile.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .second-slide .designs:nth-child(2) img {
